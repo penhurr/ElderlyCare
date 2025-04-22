@@ -1,0 +1,149 @@
+/* ===== Base Styles ===== */
+.login-page {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* ===== Hero Section ===== */
+  .login-hero {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  
+  
+  
+  /* ===== Login Section ===== */
+  .section-login {
+    padding: 60px 0;
+    background: #f8fafc;
+  }
+  
+  .login-box {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    color: #0066ff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #0066ff;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0,102,255,0.1);
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 16px;
+    background: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background: #ff6b00;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,102,255,0.3);
+  }
+  
+  /* ===== Footer Section ===== */
+  .footer-section {
+    text-align: center;
+    padding: 20px;
+    background: #0066ff;
+    color: white;
+  }
+  
+  /* ===== Toast Notifications ===== */
+  .Toastify__toast-container {
+    font-size: 0.9em;
+  }
+  
+  .Toastify__toast--success {
+    background-color: #28a745;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #dc3545;
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 768px) {
+    .login-hero {
+      height: 250px;
+    }
+    
+    .hero-overlay h1 {
+      font-size: 2.2rem;
+    }
+    
+    .hero-overlay p {
+      font-size: 1.1rem;
+    }
+    
+    .login-box {
+      padding: 30px 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .login-box {
+      padding: 25px 15px;
+    }
+  }

@@ -1,0 +1,186 @@
+/* ===== Base Styles ===== */
+.dashboard-page {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+  }
+  
+  /* ===== Hero Section ===== */
+  .dashboard-hero {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  
+  
+  
+  /* ===== Dashboard Container ===== */
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-container h1 {
+    text-align: center;
+    color: #0066ff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* ===== Section Styling ===== */
+  .dashboard-section {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-section h2 {
+    color: #0066ff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #6899cf;
+  }
+  
+  /* ===== Medical Form Styling ===== */
+  .medical-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .medical-form input,
+  .medical-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .medical-form input:focus,
+  .medical-form textarea:focus {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0,102,255,0.1);
+  }
+  
+  .medical-form button {
+    padding: 14px;
+    background: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .medical-form button:hover {
+    background: #0052cc;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,102,255,0.3);
+  }
+  
+  /* ===== QR Code Display ===== */
+  .qr-code-display {
+    text-align: center;
+  }
+  
+  .qr-code-display img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+  }
+  
+  /* ===== Recommendations ===== */
+  .recommendations {
+    background-color: #e8f4f8;
+    padding: 25px;
+    border-radius: 10px;
+    color: #0066ff;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .waiting-message {
+    text-align: center;
+    padding: 30px;
+    color: #0066ff;
+    font-size: 1.1rem;
+  }
+  
+  .pulse-animation {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  /* ===== Footer Section ===== */
+  .footer-section {
+    text-align: center;
+    padding: 25px;
+    background: #0066ff;
+    color: white;
+    
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 768px) {
+    .dashboard-hero {
+      height: 250px;
+    }
+    
+    .hero-overlay h1 {
+      font-size: 2.2rem;
+    }
+    
+    .hero-overlay p {
+      font-size: 1.1rem;
+    }
+    
+    .dashboard-container {
+      padding: 15px;
+      margin: 30px auto;
+    }
+    
+    .dashboard-section {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .dashboard-container {
+      padding: 10px;
+    }
+    
+    .dashboard-section {
+      padding: 15px;
+    }
+    
+    .hero-overlay h1 {
+      font-size: 2rem;
+    }
+  }

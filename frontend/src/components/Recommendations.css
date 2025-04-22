@@ -1,0 +1,176 @@
+/* Recommendations.css */
+.recommendations-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.recommendations-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recommendations-header h2 {
+  color: #0066ff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.recommendations-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #0066ff;
+}
+
+/* Loading Styles */
+.recommendations-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  animation: fadeIn 0.5s ease;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(52, 152, 219, 0.2);
+  border-top: 5px solid #0066ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1.5rem;
+}
+
+/* Error Styles */
+.recommendations-error {
+  color: #dc3545;
+  padding: 1.5rem;
+  background: #f8d7da;
+  border-radius: 8px;
+  border-left: 4px solid #dc3545;
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Recommendations Content */
+.recommendations-content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.recommendation-section {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.section-title {
+  color: #0066ff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.recommendation-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommendation-item {
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.recommendation-item::before {
+  content: '•';
+  color: #0066ff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 12px;
+}
+
+.item-text {
+  color: #333;
+  line-height: 1.6;
+}
+
+.bold-part {
+  font-weight: 600;
+  color: #0066ff;
+}
+
+.waiting-message {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recommendations-container {
+    padding: 0 1rem;
+  }
+  
+  .recommendations-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .recommendation-section {
+    padding: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+  }
+}

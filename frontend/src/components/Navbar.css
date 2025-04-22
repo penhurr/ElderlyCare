@@ -1,0 +1,265 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px 5px 10px ;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0.5rem;
+}
+
+.menu-icon {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu-btn:hover .menu-icon {
+    color: #0066ff;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #0066ff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #ff6b00;
+}
+
+.nav-link.active {
+    color: #ff6b00;
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6b00;
+}
+
+/* Auth Section */
+.auth-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* User Dropdown and Auth Dropdown */
+.user-dropdown, .auth-dropdown {
+    position: relative;
+}
+
+.user-info, .auth-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.user-icon {
+    color: #0066ff;
+}
+
+.user-text, .auth-text {
+    font-weight: 500;
+    color: #0066ff;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 0.5rem;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #0066ff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+    text-align: left;
+    background: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.dropdown-item:hover {
+    color: #ff6b00;
+    background-color: #ffeeee;
+    border-left-color: #ff6b00;
+}
+
+.dropdown-item.active {
+    color: #ff6b00;
+    background-color: #ffeeee;
+    border-left-color: #ff6b00;
+    font-weight: 600;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 0.25rem 0;
+}
+
+.logout {
+    color: #0066ff;
+}
+
+.logout:hover {
+    background-color: #ffeeee;
+    border-left-color: #ff4444;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        order: 1;
+    }
+    
+    .logo {
+        order: 0;
+        flex: 1;
+    }
+    
+    .auth-section {
+        order: 2;
+        width: auto;
+    }
+    
+    .nav-links {
+        order: 3;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 0;
+        display: none;
+        gap: 0.5rem;
+    }
+    
+    .nav-links.mobile-open {
+        display: flex;
+        border-top: 1px solid #eee;
+        margin-top: 1rem;
+    }
+    
+    .nav-link {
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .auth-section {
+        width: 100%;
+        padding: 1rem 0;
+        border-top: 1px solid #eee;
+        display: none;
+    }
+    
+    .auth-section.mobile-open {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .user-info, .auth-toggle {
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        margin-top: 0.5rem;
+        box-shadow: none;
+        width: 100%;
+        border: 1px solid #eee;
+        background-color: #f9f9f9;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .logo-image {
+        height: 36px;
+    }
+}

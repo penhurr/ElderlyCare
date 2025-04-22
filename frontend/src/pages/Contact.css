@@ -1,0 +1,226 @@
+/* ===== Base Styles ===== */
+.contact-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Hero Section ===== */
+
+
+
+.contact-hero {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this to center horizontally */
+  position: relative;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  
+  color: white;
+  padding: 20px;
+  
+}
+
+.hero-overlay p {
+  margin-top: 0 !important  ;
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0px;
+  
+}
+
+
+/* ===== Contact Info Section ===== */
+.section-contact-info {
+  padding: 60px 0;
+  background: #f8fafc;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.contact-method {
+  text-align: center;
+  padding: 40px 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-emoji {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.contact-method h3 {
+  color: #0066ff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.contact-method p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact-detail {
+  font-weight: 600;
+  color: #0066ff;
+  margin-top: 15px;
+}
+
+/* ===== Simplified Contact Form Section ===== */
+.section-contact-form {
+  padding: 0px 0 60px;
+  background: #f8fafc;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #0066ff;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.form-intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #0066ff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0066ff;
+  box-shadow: 0 0 0 3px rgba(0,102,255,0.1);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 16px;
+  background: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background: #ff6b00;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,102,255,0.3);
+}
+
+/* ===== Footer Section ===== */
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 250px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.1rem;
+  }
+  
+  .form-container {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-overlay {
+    padding: 20px;
+  }
+  
+  .form-container {
+    padding: 25px 15px;
+  }
+}
