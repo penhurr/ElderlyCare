@@ -1,0 +1,269 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Medical Profile - Kaif Pasha</title>
+            
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                .section {
+                    margin-bottom: 30px;
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 20px;
+                }
+                .section-title {
+                    color: #0066ff;
+                    margin-bottom: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                }
+                .section-title:after {
+                    content: '−';
+                    font-size: 20px;
+                }
+                .section-title.collapsed:after {
+                    content: '+';
+                }
+                #reader {
+                    width: 100%;
+                    max-width: 600px;
+                    height: 400px;
+                    margin: 20px auto;
+                    border: 1px solid #ccc;
+                }
+                .button-group {
+                    display: flex;
+                    gap: 10px;
+                    margin: 20px 0;
+                    flex-wrap: wrap;
+                }
+                button {
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    transition: all 0.3s;
+                }
+                #emergencyBtn {
+                    background-color: #e74c3c;
+                    color: white;
+                    flex: 1;
+                    min-width: 200px;
+                }
+                #emergencyBtn:hover {
+                    background-color: #c0392b;
+                }
+                #printBtn {
+                    background-color: #0066ff;
+                    color: white;
+                    flex: 1;
+                    min-width: 200px;
+                }       
+                #printBtn:hover {
+                    background-color: #ff6b00;
+                }
+                .recommendations {
+                    background-color: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 5px;
+                    margin-top: 15px;
+                }
+                .recommendation-heading {
+                    color: #0066ff;
+                    margin: 20px 0 10px 0;
+                    font-size: 1.2em;
+                }
+                .recommendation-heading strong {
+                color: inherit;
+                }
+                .recommendation-heading strong {
+                    color: inherit;
+                }
+
+                .recommendation-list {
+                    list-style-type: none;
+                    padding-left: 20px;
+                    margin: 10px 0;
+                }
+
+                .numbered-item {
+                    counter-increment: item;
+                    margin-bottom: 8px;
+                    position: relative;
+                    padding-left: 25px;
+                }
+
+                .numbered-item::before {
+                    content: counter(item) ".";
+                    position: absolute;
+                    left: 0;
+                    color: #0066ff;
+                    font-weight: bold;
+                }
+
+                .bullet-item {
+                    margin-bottom: 8px;
+                    position: relative;
+                    padding-left: 20px;
+                }
+
+                .bullet-item::before {
+                    content: "•";
+                    position: absolute;
+                    left: 0;
+                    color: #0066ff;
+                }
+
+                .recommendation-paragraph {
+                    margin-bottom: 12px;
+                }
+                @media print {
+                    .no-print {
+                        display: none;
+                    }
+                    body {
+                        padding: 0;
+                        font-size: 12pt;
+                    }
+                    .section {
+                    border-bottom: none;
+                        page-break-inside: avoid;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="section">
+                <h1 class="section-title">Medical Profile</h1>
+                <div class="section-content">
+            
+                    <p><strong>Name:</strong> Kaif Pasha</p>
+                    <p><strong>Medical History/Condition:</strong> suffering from piles for 4 years </p>
+                    <p><strong>Allergies:</strong> rashes on inner thighs</p>
+                    <p><strong>Medications:</strong> none</p>
+                    <p><strong>Emergency Contact:</strong> Madhur Panghal</p>
+                    <p><strong>Emergency Contact Phone:</strong> +917300506307</p>
+             
+                    </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Emergency First Aid Instructions</h2>
+                <div class="section-content">
+                    <div class="recommendations">
+                        <ul><h3 class="recommendation-heading"><strong>Emergency First Aid Instructions for Kaif Pasha</strong></h3><h3 class="recommendation-heading"># <strong>Scenario: A medical emergency involving Kaif Pasha with history of piles and rashes on inner thighs.</strong></h3><h3 class="recommendation-heading"><strong>1. Immediate Steps</strong></h3><h3 class="recommendation-heading">1. <strong>Assess Consciousness:</strong></h3><p>   - Check if Kaif is conscious, responsive, and breathing.</p><p>   - If unconscious but breathing, place in the recovery position (lying on their side).</p><h3 class="recommendation-heading">2. <strong>Reduce Pain or Discomfort (Piles):</strong></h3><p>   - If Kaif mentions rectal pain or bleeding, help them lie down on their side to reduce pressure on the rectum.</p><p>   - Avoid prolonged sitting or standing.</p><h3 class="recommendation-heading">3. <strong>Address Irritation (Rashes):</strong></h3><p>   - If inner-thigh rashes are causing discomfort, gently remove any tight clothing to avoid friction.</p><p>   - Avoid applying any cream unless prescribed by a doctor, since medical allergies/reactions are unknown.</p><h3 class="recommendation-heading">4. <strong>Hydration:</strong></h3><p>   - Offer small sips of water if Kaif is conscious and not vomiting or bleeding significantly.</p><h3 class="recommendation-heading">5. <strong>Clean Area if Needed:</strong></h3><p>   - If bleeding (from piles or rashes), use clean, soft gauze to gently blot the area.</p><h3 class="recommendation-heading">   - <strong>Do NOT use alcohol-based products</strong> to clean sensitive areas.</h3><h3 class="recommendation-heading"><strong>2. What to Monitor</strong></h3><h3 class="recommendation-heading">1. <strong>Bleeding:</strong></h3><h3 class="recommendation-heading">   - Assess if there is <strong>minimal bleeding</strong> (manageable) or <strong>heavy, persistent bleeding</strong> (requires emergency attention).</h3><h3 class="recommendation-heading">2. <strong>Pain Level:</strong></h3><p>   - Ask about the level and location of pain. Severe or escalating pain may indicate complications.</p><h3 class="recommendation-heading">3. <strong>Dizziness or Fatigue:</strong></h3><p>   - Watch for fainting, dizziness, or excessive sweating, which may signal serious blood loss or dehydration.</p><h3 class="recommendation-heading">4. <strong>Signs of Infection (Rashes):</strong></h3><p>   - Look for increased redness, swelling, pus, or fever, which may indicate an infection.</p><h3 class="recommendation-heading"><strong>3. When to Seek Emergency Help</strong></h3><h3 class="recommendation-heading">1. <strong>Severe Rectal Bleeding:</strong></h3><p>   - If blood loss is heavy or continuous, or Kaif shows symptoms of shock (e.g., pale skin, confusion, rapid heart rate).</p><h3 class="recommendation-heading">2. <strong>Severe Pain:</strong></h3><p>   - If Kaif experiences intense or worsening pain in the rectum or abdomen.</p><h3 class="recommendation-heading">3. <strong>Signs of Infection or Allergic Reaction:</strong></h3><p>   - If the thigh rashes spread rapidly, show signs of infection, or Kaif has trouble breathing/swelling.</p><h3 class="recommendation-heading">4. <strong>Unresponsiveness:</strong></h3><p>   - If Kaif becomes unconscious or is struggling to breathe.</p><h3 class="recommendation-heading">5. <strong>Other Concerning Symptoms:</strong></h3><p>   - Persistent vomiting, high fever, or inability to pass stool for more than 48 hours.</p><h3 class="recommendation-heading"><strong>Reminder:</strong></h3><p>After providing first aid, encourage Kaif to schedule a follow-up with their doctor to better manage piles and address any persistent rash concerns.</p></ul>
+                    </div>    
+                </div>
+            </div>
+            
+            <div class="button-group no-print">
+                <button id="emergencyBtn">Send Emergency Alert</button>
+                <button id="printBtn">Print This Page</button>
+            </div>
+            
+            <script>
+
+            const serverIP = "https://2564-115-246-120-134.ngrok-free.app";
+
+            // Collapsible sections functionality
+            document.querySelectorAll('.section-title').forEach(title => {
+                title.addEventListener('click', () => {
+                    const content = title.nextElementSibling;
+                    title.classList.toggle('collapsed');
+                    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                });
+            
+                // Initialize all sections as expanded
+                title.nextElementSibling.style.display = 'block';
+            });
+
+            // Print functionality
+            document.getElementById('printBtn').addEventListener('click', () => {
+                window.print();
+            });
+
+            const sendEmergencyMessage = async (latitude,longitude) => {
+            try {
+               
+                // Extract the emergency contact number
+                const emergencyContact = "+917300506307"; // Assuming this is a phone number
+                const profileName = "Kaif Pasha"
+                const message = `Emergency Alert: ${profileName} needs assistance! ${latitude && longitude ? 
+                            `Here is their location: https://www.google.com/maps?q=${latitude},${longitude}` : 
+                            'Location unavailable'}`;
+
+                // Send the SMS using your backend API
+                const smsResponse = await fetch('https://2564-115-246-120-134.ngrok-free.app/api/send-sms', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        to: emergencyContact,
+                        body: message,
+                        latitude: latitude || null, 
+                        longitude: longitude || null
+                    }),
+                });
+
+                const responseData = await smsResponse.json();
+
+                if (!smsResponse.ok) {
+                    throw new Error(responseData.message || 'Failed to send SMS');
+                }
+
+                console.log("Message sent successfully");
+                alert("Emergency message sent to " + emergencyContact);
+            } catch (error) {
+                console.error("Error sending message:", error);
+                alert("Failed to send emergency message: " + error.message);
+            }
+        };
+
+        const getLocationAndSendMessage = () => {
+        if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(
+                            async (position) => {
+                                try {
+                                    await sendEmergencyMessage(
+                                        position.coords.latitude, 
+                                        position.coords.longitude
+                                    );
+                                } catch (error) {
+                                    console.error("Error:", error);
+                                }
+                            },
+                            (error) => {
+                                console.error("Location error:", error);
+                                if (confirm("Unable to get your location. Send emergency message without location?"+ error.message)) {
+                                    sendEmergencyMessage(null, null);
+                                }
+                            },
+                            { timeout: 10000, enableHighAccuracy: true }
+                        );
+                    } else {
+                        if (confirm("Geolocation not supported. Send emergency message without location?")) {
+                            sendEmergencyMessage(null, null);
+                        }
+                    }
+                };
+
+       document.getElementById('emergencyBtn').addEventListener('click', () => {
+                    if (confirm("Are you sure you want to send an emergency alert?")) {
+                        getLocationAndSendMessage();
+                    }
+                });
+       
+    </script>
+        </body>
+        </html>
+    
