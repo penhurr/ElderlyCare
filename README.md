@@ -9,7 +9,7 @@ A comprehensive web application designed to assist elderly individuals and their
 
 🆔 QR Code Generation: Each profile includes a unique QR code that gives paramedics or bystanders instant access to critical health info in emergencies.
 
-📍 Real-Time Location Alerts: Sends live location updates to registered caretakers or family members when the QR code is scanned or abnormal movement patterns are detected.
+📍 Real-Time Location Alerts: Sends live location updates to registered caretakers or family members when the QR code is scanned.
 
 🤖 AI-Powered Recommendations:
 
@@ -22,9 +22,9 @@ First Aid Guidance: Instant first aid tips and emergency response suggestions ta
 🧠 Technologies Used
 MERN Stack (MongoDB, Express.js, React.js, Node.js)
 
-Python (for ML models)
+Python (for ML models) [in future]
 
-Machine Learning (for recommendations and anomaly detection)
+Machine Learning (for recommendations and anomaly detection) [in future]
 
 Google Maps API (for location services)
 
